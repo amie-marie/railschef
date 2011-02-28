@@ -1,0 +1,16 @@
+<h1><%= h @recipe.title %></h1>
+
+<p><span id = "vote_score">
+Score: <%= @recipe.votes.size %>
+</span></p>
+
+<p><%= h @recipe.method %></p>
+<p><%= link_to "Go Back", recipes_path %> | <%= link_to "Edit recipe", edit_recipe_path %> | <%= link_to "Delete Recipe", @recipe, :method => :delete %></p>
+
+<div id= "vote_form">
+  <% form_remote_tag :url => recipe_votes_path(@recipe) do %>
+  <%= submit_tag 'Vote for Recipe' %>
+ <% end %>
+</div>
+
+

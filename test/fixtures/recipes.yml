@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+Beans_on_Toast
+  id: 1
+  title: Beans on Toast
+  method: Heat beans in pan, toast the bread. Add butter and place beans on toast.
+  created_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+  updated_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+  user_id: 2
+
+Chip_Buttie
+  id: 2
+  title: Chip Butties
+  method: Cook chips, butter bread and then place chips on bread.
+  created_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+  updated_at: <%= Time.parse(“12/3/10 23:27”).to_s(:db) %>
+  user_id: 3
